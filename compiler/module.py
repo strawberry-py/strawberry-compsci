@@ -135,7 +135,7 @@ class Compiler(commands.Cog):
             if "signal" in dic:
                 dic["status"] = dic["signal"]
         except aiohttp.ClientResponseError as e:
-            embed = self.create_embed(
+            embed = utils.discord.create_embed(
                 author=ctx.message.author,
                 title=_(ctx, "Critical error:"),
             )
