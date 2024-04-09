@@ -5,6 +5,7 @@ from typing import List, Union
 import aiohttp
 import discord
 from discord.ext import commands
+
 from pie import check, i18n, utils
 
 _ = i18n.Translator("modules/compsci").translate
